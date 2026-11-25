@@ -1,0 +1,131 @@
+[
+    {
+        "numero_documento": 1,
+        "modelo": "prebuilt-invoice",
+        "campos": {
+            "VendorName": {
+                "valor": "IBERCOMPONENTES\nINDUSTRIALES, S.L.",
+                "confianza": 0.901
+            },
+            "VendorAddress": {
+                "valor": "Calle de la Industria 125, 28000 Madrid\nEspaña",
+                "confianza": 0.481
+            },
+            "VendorAddressRecipient": {
+                "valor": "Ibercomponentes Industriales, S.L.",
+                "confianza": 0.925
+            },
+            "CustomerName": {
+                "valor": "Horizonte Distribución Industrial, S.A.",
+                "confianza": 0.916
+            },
+            "CustomerAddress": {
+                "valor": "Avenida del Comercio 48, 08000 Barcelona\nEspaña",
+                "confianza": 0.58
+            },
+            "CustomerAddressRecipient": {
+                "valor": "Horizonte Distribución Industrial, S.A.",
+                "confianza": 0.916
+            },
+            "InvoiceId": {
+                "valor": "FM-2026-00127",
+                "confianza": 0.94
+            },
+            "InvoiceDate": {
+                "valor": "19/11/2026",
+                "confianza": 0.949
+            },
+            "DueDate": {
+                "valor": "18/01/2027",
+                "confianza": 0.945
+            },
+            "PurchaseOrder": {
+                "valor": "OC-785421",
+                "confianza": 0.925
+            },
+            "SubTotal": {
+                "valor": "159.500,00 €",
+                "confianza": 0.819
+            },
+            "TotalTax": {
+                "valor": "33.495,00 €",
+                "confianza": 0.938
+            },
+            "InvoiceTotal": {
+                "valor": "192.995,00 €",
+                "confianza": 0.938
+            }
+        },
+        "lineas_factura": [
+            {
+                "numero_linea": 1,
+                "Description": {
+                    "valor": "Componentes industriales serie C240",
+                    "confianza": 0.944
+                },
+                "Quantity": {
+                    "valor": "250",
+                    "confianza": 0.943
+                },
+                "UnitPrice": {
+                    "valor": "360,00 €",
+                    "confianza": 0.944
+                },
+                "ProductCode": {
+                    "valor": "CMP-240",
+                    "confianza": 0.943
+                },
+                "Amount": {
+                    "valor": "90.000,00 €",
+                    "confianza": 0.944
+                }
+            },
+            {
+                "numero_linea": 2,
+                "Description": {
+                    "valor": "Módulos de control serie M750",
+                    "confianza": 0.944
+                },
+                "Quantity": {
+                    "valor": "100",
+                    "confianza": 0.943
+                },
+                "UnitPrice": {
+                    "valor": "650,00 €",
+                    "confianza": 0.943
+                },
+                "ProductCode": {
+                    "valor": "MOD-750",
+                    "confianza": 0.94
+                },
+                "Amount": {
+                    "valor": "65.000,00 €",
+                    "confianza": 0.944
+                }
+            },
+            {
+                "numero_linea": 3,
+                "Description": {
+                    "valor": "Servicio de logística y embalaje",
+                    "confianza": 0.943
+                },
+                "Quantity": {
+                    "valor": "1",
+                    "confianza": 0.943
+                },
+                "UnitPrice": {
+                    "valor": "4.500,00 €",
+                    "confianza": 0.944
+                },
+                "ProductCode": {
+                    "valor": "LOG-001",
+                    "confianza": 0.941
+                },
+                "Amount": {
+                    "valor": "4.500,00 €",
+                    "confianza": 0.944
+                }
+            }
+        ]
+    }
+]
