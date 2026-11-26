@@ -1,0 +1,135 @@
+[
+  {
+    "numero": 1,
+    "prueba": "PREGUNTA DIRECTA",
+    "pregunta": "¿Qué diferencia existe entre factoring con recurso y sin recurso?",
+    "filtro": "conocimiento_producto",
+    "fuentes": [
+      {
+        "id": "factoring_doc_001_chunk_003",
+        "fuente": "factoring_mayorista.md",
+        "categoria": "conocimiento_producto",
+        "distancia": 0.4598
+      },
+      {
+        "id": "factoring_doc_001_chunk_006",
+        "fuente": "factoring_mayorista.md",
+        "categoria": "conocimiento_producto",
+        "distancia": 0.4629
+      },
+      {
+        "id": "factoring_doc_001_chunk_002",
+        "fuente": "factoring_mayorista.md",
+        "categoria": "conocimiento_producto",
+        "distancia": 0.473
+      }
+    ],
+    "respuesta": "La diferencia principal es quién asume el riesgo de impago del deudor:\n\n- **Factoring con recurso:** el cedente responde frente al factor si el deudor no paga en los supuestos pactados. Por tanto, permanece una exposición frente al cedente.\n- **Factoring sin recurso:** el factor asume el riesgo de insolvencia del deudor dentro de las condiciones de cobertura acordadas.\n\nImportante: **“sin recurso” no significa que estén cubiertas todas las incidencias**. Las disputas de calidad, notas de abono, duplicidades o facturas inexistentes pueden quedar excluidas y generar reclamaciones al cedente, según el contrato.\n\n**Fuente utilizada:** *factoring_mayorista.md*, “Base de conocimiento de factoring mayorista”, página 1, sección “Modalidades del producto” y apartado “Factoring frente a confirming”.",
+    "evaluacion": "correcto",
+    "justificacion": "Recupera las modalidades de factoring con y sin recurso, explica correctamente la asignación del riesgo de impago y cita los documentos y chunks utilizados."
+  },
+  {
+    "numero": 2,
+    "prueba": "PREGUNTA REFORMULADA",
+    "pregunta": "Si el comprador resulta insolvente, ¿quién soporta la pérdida en una operación de factoring sin recurso?",
+    "filtro": "conocimiento_producto",
+    "fuentes": [
+      {
+        "id": "factoring_doc_001_chunk_002",
+        "fuente": "factoring_mayorista.md",
+        "categoria": "conocimiento_producto",
+        "distancia": 0.4327
+      },
+      {
+        "id": "factoring_doc_001_chunk_003",
+        "fuente": "factoring_mayorista.md",
+        "categoria": "conocimiento_producto",
+        "distancia": 0.4489
+      },
+      {
+        "id": "factoring_doc_001_chunk_004",
+        "fuente": "factoring_mayorista.md",
+        "categoria": "conocimiento_producto",
+        "distancia": 0.4628
+      }
+    ],
+    "respuesta": "En una operación de **factoring sin recurso**, el **factor soporta el riesgo de insolvencia del deudor cedido**, siempre dentro de las condiciones y límites de cobertura pactados.\n\nNo obstante, el cedente podría seguir respondiendo por incidencias excluidas, como **disputas comerciales, defectos de calidad, notas de abono, duplicidades o facturas inexistentes**. Por tanto, «sin recurso» no implica cobertura de cualquier impago.\n\n**Fuente:** *factoring_mayorista.md*, Base de conocimiento de factoring mayorista, página 1, sección «Modalidades del producto» y precisión sobre el factoring sin recurso.",
+    "evaluacion": "correcto",
+    "justificacion": "Interpreta correctamente una pregunta reformulada, identifica que el factor soporta el riesgo de insolvencia cubierto y señala las exclusiones contractuales."
+  },
+  {
+    "numero": 3,
+    "prueba": "INFORMACIÓN EN OTRO CHUNK",
+    "pregunta": "En el ejemplo de una factura de 1.000.000 €, ¿cuánto se anticipa al 85 % y qué intereses y comisiones se aplican?",
+    "filtro": "conocimiento_producto",
+    "fuentes": [
+      {
+        "id": "factoring_doc_001_chunk_007",
+        "fuente": "factoring_mayorista.md",
+        "categoria": "conocimiento_producto",
+        "distancia": 0.379
+      },
+      {
+        "id": "factoring_doc_001_chunk_005",
+        "fuente": "factoring_mayorista.md",
+        "categoria": "conocimiento_producto",
+        "distancia": 0.4579
+      },
+      {
+        "id": "factoring_doc_001_chunk_006",
+        "fuente": "factoring_mayorista.md",
+        "categoria": "conocimiento_producto",
+        "distancia": 0.4582
+      }
+    ],
+    "respuesta": "En el ejemplo documental:\n\n- **Anticipo bruto:** 850.000 € (1.000.000 € × 85 %).\n- **Interés del periodo:** 10.625 €, calculado sobre 850.000 € al **5 % anual durante 90 días**, con base 360:\n  - 850.000 € × 5 % × 90 / 360.\n- **Comisión:** 3.000 €, equivalente al **0,30 % del nominal**:\n  - 1.000.000 € × 0,30 %.\n\nBajo el supuesto didáctico de descontar ambos conceptos al inicio, el **abono neto inicial sería de 836.375 €**. El importe no anticipado sería de 150.000 €.\n\n**Fuente:** *factoring_mayorista.md*, sección «Página 3», ID **factoring_doc_001_chunk_006**; corroborado con las tablas de la página 3, ID **factoring_doc_001_chunk_007**.",
+    "evaluacion": "correcto",
+    "justificacion": "Recupera el ejemplo financiero de otro chunk y reproduce correctamente el anticipo de 850.000 €, los intereses de 10.625 €, la comisión de 3.000 € y el abono neto."
+  },
+  {
+    "numero": 4,
+    "prueba": "PREGUNTA CON FILTRO",
+    "pregunta": "¿Cuál es el importe total y la fecha de vencimiento de la factura ficticia?",
+    "filtro": "facturas",
+    "fuentes": [
+      {
+        "id": "factoring_doc_002_chunk_001",
+        "fuente": "factura_factoring_campos.json",
+        "categoria": "facturas",
+        "distancia": 0.3602
+      }
+    ],
+    "respuesta": "El importe total de la factura ficticia es **192.995,00 €** y la fecha de vencimiento es el **18/01/2027**.\n\n**Fuente:** `factura_factoring_campos.json`, sección “Documento completo”, ID `factoring_doc_002_chunk_001`.",
+    "evaluacion": "correcto",
+    "justificacion": "El filtro categoria='facturas' limita la recuperación al documento de factura. Identifica correctamente el importe de 192.995 € y el vencimiento del 18/01/2027."
+  },
+  {
+    "numero": 5,
+    "prueba": "INFORMACIÓN AUSENTE",
+    "pregunta": "¿Cuál fue la tasa de morosidad real de la cartera de factoring del banco en 2025?",
+    "filtro": null,
+    "fuentes": [
+      {
+        "id": "factoring_doc_001_chunk_004",
+        "fuente": "factoring_mayorista.md",
+        "categoria": "conocimiento_producto",
+        "distancia": 0.4446
+      },
+      {
+        "id": "factoring_doc_001_chunk_002",
+        "fuente": "factoring_mayorista.md",
+        "categoria": "conocimiento_producto",
+        "distancia": 0.4543
+      },
+      {
+        "id": "factoring_doc_001_chunk_003",
+        "fuente": "factoring_mayorista.md",
+        "categoria": "conocimiento_producto",
+        "distancia": 0.4546
+      }
+    ],
+    "respuesta": "No existe información suficiente en el contexto documental para determinar la tasa de morosidad real de la cartera de factoring del banco en 2025.  \n\nLa documentación únicamente menciona la mora o los días de impago (DPD) como métricas de seguimiento y contempla alertas de mora dentro del control del riesgo, pero no proporciona ningún porcentaje ni datos históricos de 2025. Además, indica que se trata de una base de conocimiento general y no de las políticas o resultados de una entidad concreta.\n\n**Fuente:** *factoring_mayorista.md*, páginas 1 y 2, ID `factoring_doc_001_chunk_002` e `factoring_doc_001_chunk_004`.",
+    "evaluacion": "correcto",
+    "justificacion": "Aunque recupera tres chunks semánticamente próximos, reconoce que no existe evidencia sobre la tasa de morosidad real de 2025 y no inventa ningún porcentaje."
+  }
+]
